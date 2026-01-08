@@ -11,7 +11,7 @@ def visualize_traffic(input_file):
         return
 
     df['DateTime'] = pd.to_datetime(df['DateTime'])
-    df.set_index('DateTime', inplace=True)
+    df.set_index('DateTime', inplace=True) 
     
     # Plotting
     plt.figure(figsize=(15, 6))
