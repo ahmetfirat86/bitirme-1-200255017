@@ -1,0 +1,11 @@
+Bu proje, şehir içi trafik sıkışıklığını azaltmak amacıyla gerçek zamanlı trafik verilerini (kamera görüntüleri, sensör verilerii verisetlerini) kullanarak yapay zeka tabanlı bir yönetim sistemi geliştirmeyi hedeflemektedir. Derin öğrenme modelleri ile trafik yoğunluğu tahmin edilecek ve trafik ışıkları dinamik olarak optimize edilecektir. Sistem, olası kaza ve sıkışıklık durumlarını önceden tespit ederek sürücülere alternatif rotalar önerebilecek ve acil durum müdahale ekiplerine otomatik bildirimler gönderebilecektir. Böylece hem yakıt tüketimi azalacak hem de şehir içi ulaşım verimliliği artırılacaktır.
+
+Proje, derin öğrenme (CNN–LSTM) tabanlı yoğunluk tahmini ve pekiştirmeli öğrenme (Reinforcement
+Learning) ile trafik sinyali optimizasyonunu bir araya getirmesi açısından yenilikçidir. Geleneksel sistemlerden
+farklı olarak, model anlık veriyle kendi kendine öğrenme kapasitesine sahiptir ve olası tıkanıklıkları önceden
+tahmin ederek adaptif şekilde tepki verebilmektedir
+
+Verilerdata setinden alınır. ( şimdilik veri setinden daha sonra trafik kameralarından alınacak ) TensorFlow kütüphaneleri ile işlenecektir. CNN
+modelleri araç tespiti ve sayımı için, LSTM modelleri ise trafik yoğunluğu tahmini için kullanılacaktır. Ardından
+Reinforcement Learning algoritması, yoğunluk verisine göre sinyal sürelerini otomatik ayarlayacaktır.
+Simülasyon ortamında (örneğin SUMO veya Python tabanlı sanal kavşak) sistemin etkinliği test edilecektir.
